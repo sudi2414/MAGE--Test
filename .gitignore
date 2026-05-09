@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+agents/__pycache__/
+*.pyc
+*.class
+java_project/target/
+generated_tests/
