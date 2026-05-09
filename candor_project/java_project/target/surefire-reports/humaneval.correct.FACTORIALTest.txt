@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: humaneval.correct.FACTORIALTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.028 s <<< FAILURE! -- in humaneval.correct.FACTORIALTest
+humaneval.correct.FACTORIALTest.testFactorialWithTen -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected [1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800] for n=10 ==> expected: <[1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800]> but was: <[1, 2, 6, 24, 15, 720, 28, 40320, 45, 3628800]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at humaneval.correct.FACTORIALTest.testFactorialWithTen(FACTORIALTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+humaneval.correct.FACTORIALTest.testFactorialWithFive -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected [1, 2, 6, 24, 120] for n=5 ==> expected: <[1, 2, 6, 24, 120]> but was: <[1, 2, 6, 24, 15]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at humaneval.correct.FACTORIALTest.testFactorialWithFive(FACTORIALTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

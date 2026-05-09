@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: humaneval.correct.MAX_ELEMENTTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in humaneval.correct.MAX_ELEMENTTest
+humaneval.correct.MAX_ELEMENTTest.testMaxElementWithEmptyList -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.ArrayIndexOutOfBoundsException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at humaneval.correct.MAX_ELEMENTTest.testMaxElementWithEmptyList(MAX_ELEMENTTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/java.util.Arrays$ArrayList.get(Arrays.java:4227)
+	at humaneval.correct.MAX_ELEMENT.max_element(MAX_ELEMENT.java:7)
+	at humaneval.correct.MAX_ELEMENTTest.lambda$testMaxElementWithEmptyList$0(MAX_ELEMENTTest.java:42)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+

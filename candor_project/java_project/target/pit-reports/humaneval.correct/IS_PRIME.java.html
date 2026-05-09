@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>IS_PRIME.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package humaneval.correct;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class IS_PRIME {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean is_prime(int n){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_5'/>
+5
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_5'>2</a>
+<span>
+
+1. is_prime : changed conditional boundary &rarr; KILLED<br/>
+
+2. is_prime : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (n &#60; 2)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_6'/>
+6
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_6'>1</a>
+<span>
+
+1. is_prime : replaced boolean return with true for humaneval/correct/IS_PRIME::is_prime &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_7'/>
+7
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_7'>3</a>
+<span>
+
+1. is_prime : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. is_prime : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+3. is_prime : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for (int k = 2; k &#60; n - 1; k += 1){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_8'/>
+8
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_8'>2</a>
+<span>
+
+1. is_prime : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+2. is_prime : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (n % k == 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_9'>1</a>
+<span>
+
+1. is_prime : replaced boolean return with true for humaneval/correct/IS_PRIME::is_prime &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_11'/>
+11
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_11'>1</a>
+<span>
+
+1. is_prime : replaced boolean return with false for humaneval/correct/IS_PRIME::is_prime &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@26874f2c_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@26874f2c_5'>5</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_5'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithTwo()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithZero()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@26874f2c_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithZero()]</span></span> replaced boolean return with true for humaneval/correct/IS_PRIME::is_prime &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@26874f2c_7'>7</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_7'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithTwo()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithTwo()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@26874f2c_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithFour()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithFour()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@26874f2c_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithFour()]</span></span> replaced boolean return with true for humaneval/correct/IS_PRIME::is_prime &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@26874f2c_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@26874f2c_11'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>is_prime<br/><b>Killed by : </b>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithTwo()]</span></span> replaced boolean return with false for humaneval/correct/IS_PRIME::is_prime &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithZero()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithOne()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithNegativeNumber()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithTwo()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithThree()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithNine()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithTen()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithLargePrimeNumber()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithLargeNumber()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithFour()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithSix()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithSmallPrimeNumber()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithEight()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithSeven()] (0 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithFive()] (1 ms)</li><li>humaneval.correct.IS_PRIMETest.[engine:junit-jupiter]/[class:humaneval.correct.IS_PRIMETest]/[method:testIsPrimeWithSmallNonPrimeNumber()] (2 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.0
+
+</body>
+</html>
